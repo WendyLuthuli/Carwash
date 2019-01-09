@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wendy.carwash.client.AddCarActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Add Vehicle"
+        android:textColor="#ffffff"
+        android:id="@+id/tv_header"
+        android:textSize="25dp"
+        android:gravity="center"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/labelBlackColor"
+            android:textStyle="bold"
+            android:text="REG NO."/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_reg_no"
+            android:hint="Vehicle Reg. No"
+            android:text=""
+            android:background="@drawable/textarea"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/labelBlackColor"
+            android:textStyle="bold"
+            android:text="MODEL"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_model"
+            android:hint="ie. Yaris, RIO..."
+            android:background="@drawable/textarea"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/labelBlackColor"
+            android:textStyle="bold"
+            android:text="DESCRIPTION (OPTIONAL)"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_desc"
+            android:hint="ie. red with tinted windows"
+            android:background="@drawable/textarea"
+            />
+        <Button
+            android:id="@+id/btn_add_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+
+            android:background="@drawable/rounded_button"
+            android:text="submit"/>
+    </LinearLayout>
+</LinearLayout>
